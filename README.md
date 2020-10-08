@@ -1,24 +1,28 @@
 # vue-chaos
+A simple yet chaotic component to introduce chaos in your Vue app
 
+#### Usage
+``
 ## Project setup
+Install
 ```
-npm install
+npm i vue-chaos
 ```
-
-### Compiles and hot-reloads for development
+Import & use
+```vue
+<template>
+       <VueChaos>
+          <MyOtherComponent />
+        </VueChaos>
+</template>
+<script>
+    import VueChaos from 'vue-chaos';
+    ...
+    export default {
+      ...
+      components:{
+        VueChaos
+      }
+    }
+</script>
 ```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
