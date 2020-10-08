@@ -1,6 +1,6 @@
 {
   "name": "vue-chaos",
-  "version": "0.1.1-canary.1",
+  "version": "0.1.1-canary.2",
   "scripts": {
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
