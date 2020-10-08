@@ -5,6 +5,9 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "repository": {
+    "url": "https://github.com/aviadhahami/vue-chaos"
+  },
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
