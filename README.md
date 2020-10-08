@@ -12,7 +12,10 @@ npm i vue-chaos
 Import & use
 ```vue
 <template>
-        <VueChaos>
+        <VueChaos
+         :chance="5"
+         error-message="My custom error message"
+         :run-in-production="false">
           <MyOtherComponent />
         </VueChaos>
 </template>
@@ -27,3 +30,15 @@ Import & use
     }
 </script>
 ```
+
+### Props
+* `chance` - `{type: Number, default: 5}` - decides the probability of the wrapper to throw an error;
+* `error-message` - `{type: String, default: 'Chaos emitted by VueChaos!'}` - custom error message to throw (i.e. to assert snapshots against)
+* `run-in-production` - `{type: Boolean, default: false}` - a flag to flip if we'd like to cause chaos in production (use at own risk!) 
+
+
+### Chaos Engineering?
+`// TODO`
+
+### More awesome chaotic tools
+`// TODO`
