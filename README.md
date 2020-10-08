@@ -12,7 +12,7 @@ npm i vue-chaos
 Import & use
 ```vue
 <template>
-       <VueChaos>
+        <VueChaos>
           <MyOtherComponent />
         </VueChaos>
 </template>
