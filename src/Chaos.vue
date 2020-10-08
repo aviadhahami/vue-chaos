@@ -6,7 +6,7 @@
 import Vue from 'vue';
 const componentName = 'VueChaos';
 
-export default Vue.component(componentName, {
+export default {
   props:{
     chance:{
       default: false,
@@ -15,7 +15,11 @@ export default Vue.component(componentName, {
     errorMessage:{
       default: `${componentName} created chaos!`,
       type: String
+    },
+    runInProduction:{
+      default: false,
+      type: Boolean
     }
   }
-});
+};
 </script>
