@@ -1,11 +1,38 @@
 {
   "name": "vue-chaos",
   "version": "0.1.1-canary.2",
+  "description": "A simple yet chaotic component to introduce chaos in your Vue app",
+  "homepage": "https://github.com/aviadhahami/vue-chaos",
+  "author": "Aviad Hahami <aviadhahami@gmail.com>",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "keywords": [
+    "front-end",
+    "web",
+    "vue",
+    "vuejs",
+    "vue-js",
+    "dialog",
+    "alert",
+    "modal",
+    "chaos-vue",
+    "chaos",
+    "chaos-engineering-vue"
+  ],
+  "bugs": {
+    "url": "https://github.com/aviadhahami/vue-chaos/issues"
+  },
   "scripts": {
-    "build": "vue-cli-service build",
+    "demo": "vue-cli-service serve --open ./demo/index.js",
+    "postinstall": "npm run build",
+    "build": "vue-cli-service build --target lib --name chaos-vue ./src/VueChaos.ts",
     "lint": "vue-cli-service lint"
   },
   "repository": {
+    "type": "git",
     "url": "https://github.com/aviadhahami/vue-chaos"
   },
   "dependencies": {
