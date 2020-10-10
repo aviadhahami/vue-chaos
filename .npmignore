@@ -5,3 +5,4 @@ test/
 vue.config.js
 babel.config.js
 .dcignore
+tsconfig.json
