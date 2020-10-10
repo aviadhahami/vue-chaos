@@ -32,22 +32,24 @@ Import & use
 ```
 
 ### Props
-* `chance` - `{type: Number, default: 5}` - decides the probability of the wrapper to throw an error;
-* `error-message` - `{type: String, default: 'Chaos emitted by VueChaos!'}` - custom error message to throw (i.e. to assert snapshots against)
-* `run-in-production` - `{type: Boolean, default: false}` - a flag to flip if we'd like to cause chaos in production (use at own risk!) 
+Name | Type | Default value | Description
+--- | --- | --- | ---
+`chance` | `Number` | `5` | Decides the probability of the wrapper to throw an error;
+`error-message` | `String` | `🔥 Chaos emitted by VueChaos 🔥` | custom error message to throw (i.e. to assert snapshots against)
+`run-in-production` | `Boolean` | `false` | a flag to flip if we'd like to cause chaos in production (use at own risk! ☠️) 
 
 ### 🔥🐒 Chaos Engineering? 🐒🔥
 _"Chaos engineering is the discipline of experimenting on a software system in production in order to build confidence in the system's capability to withstand turbulent and unexpected conditions."_ [(wiki)](https://en.wikipedia.org/wiki/Chaos_engineering)
 
 ### OK, but why? 🤔
-Using this w/ the concept of [`ErrorCaptured`](https://vuejs.org/v2/api/#errorCaptured) can and will help your app improve its resilience;
+Using the concept of [`ErrorCaptured`](https://vuejs.org/v2/api/#errorCaptured) in combination with this component can and will improve your apps resilience;
 
-This way you can make sure your app won't randomly throw weird things and will handle everything gracefully, so your customers won't be impacted. 
+This way you can make sure your app won't behave unexpectedly and will handle everything gracefully, so your customers won't be impacted. 
 
 
 ### More awesome chaotic tools 🎉
 1. Frontend
     * [react-chaos](https://github.com/jchiatt/react-chaos)
-    * Angular doesn't need one cause it's chaotic enough 😏🤭
+    * Angular - no need as it's chaotic enough 😏🤭
 2. Other tools:
     * [awesome-chaos-engineering](https://github.com/dastergon/awesome-chaos-engineering#notable-tools)
