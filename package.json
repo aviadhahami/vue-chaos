@@ -4,7 +4,7 @@
   "description": "A simple yet chaotic component to introduce chaos in your Vue app",
   "homepage": "https://github.com/aviadhahami/vue-chaos",
   "author": "Aviad Hahami <aviadhahami@gmail.com>",
-  "main": "dist/chaos-vue.common.js",
+  "main": "dist/vue-chaos.common.js",
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
