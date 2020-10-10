@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import VueChaos from '@/VueChaos'
+import {VueChaos} from '@/VueChaos'
 import ErrorBoundary from "./ErrorBoundary";
 export default {
   name: "Demo",

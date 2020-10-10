@@ -4,20 +4,17 @@
   "description": "A simple yet chaotic component to introduce chaos in your Vue app",
   "homepage": "https://github.com/aviadhahami/vue-chaos",
   "author": "Aviad Hahami <aviadhahami@gmail.com>",
-  "main": "dist/index.js",
-  "types": "types/index.d.ts",
+  "main": "dist/chaos-vue.common.js",
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
+  "license": "SEE LICENSE IN LICENSE.md",
   "keywords": [
     "front-end",
     "web",
     "vue",
     "vuejs",
     "vue-js",
-    "dialog",
-    "alert",
-    "modal",
     "chaos-vue",
     "chaos",
     "chaos-engineering-vue"
@@ -27,7 +24,7 @@
   },
   "scripts": {
     "demo": "vue-cli-service serve --open ./demo/index.js",
-    "postinstall": "npm run build",
+    "prepublish": "npm run build",
     "build": "vue-cli-service build --target lib --name chaos-vue ./src/VueChaos.ts",
     "lint": "vue-cli-service lint"
   },

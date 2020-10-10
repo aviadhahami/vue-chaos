@@ -1,6 +1,6 @@
 import Vue from 'vue';
 
-export default Vue.component('VueChaos', {
+const vueChaos = Vue.component('VueChaos', {
     functional: true,
     props: {
         chance: {
@@ -8,7 +8,7 @@ export default Vue.component('VueChaos', {
             type: Number,
         },
         errorMessage: {
-            default: 'Chaos emitted by VueChaos!',
+            default: '🔥 Chaos emitted by VueChaos 🔥',
             type: String
         },
         runInProduction: {
@@ -32,3 +32,5 @@ export default Vue.component('VueChaos', {
         return createElement('div', ctx.data, ctx.children);
     }
 });
+
+export {vueChaos as VueChaos};
