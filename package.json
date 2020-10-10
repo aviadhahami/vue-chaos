@@ -25,8 +25,9 @@
   "scripts": {
     "demo": "vue-cli-service serve --open ./demo/index.js",
     "prepublish": "npm run build",
-    "build": "vue-cli-service build --target lib --name chaos-vue ./src/VueChaos.ts",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build --target lib --name vue-chaos ./src/VueChaos.ts",
+    "lint": "vue-cli-service lint",
+    "canary": "npm version prerelease && npm publish"
   },
   "repository": {
     "type": "git",

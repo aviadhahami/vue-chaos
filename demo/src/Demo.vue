@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import {VueChaos} from '@/VueChaos'
-import ErrorBoundary from "./ErrorBoundary";
+import {VueChaos} from 'vue-chaos';
+import ErrorBoundary from 'vue-error-boundary';
 export default {
   name: "Demo",
   components:{
