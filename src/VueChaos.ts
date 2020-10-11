@@ -17,7 +17,9 @@ const vueChaos = Vue.component('VueChaos', {
         }
     },
     render(createElement, ctx) {
-
+        console.log('in render');
+        console.log(process.env.NODE_ENV);
+        console.log('here?');
         // Verify we're not getting anyone fired
         if (process.env.NODE_ENV === 'production' && !ctx.props.runInProduction) {
             return createElement('div', ctx.data, ctx.children);
@@ -27,10 +29,11 @@ const vueChaos = Vue.component('VueChaos', {
 
         const shouldEmitChaos = (ctx.props.chance / 10) >= Math.random();
         if (shouldEmitChaos) {
+            console.log('Throwing error!');
             throw new Error(ctx.props.errorMessage);
         }
         return createElement('div', ctx.data, ctx.children);
     }
 });
 
-export {vueChaos as VueChaos};
+export default VueChaos;
