@@ -3,10 +3,6 @@ import Vue from 'vue';
 const vueChaos = Vue.component('VueChaos', {
     functional: true,
     props: {
-        NODE_ENV:{
-          default:'development',
-
-        },
         chance: {
             default: 5,
             type: Number,
@@ -21,20 +17,30 @@ const vueChaos = Vue.component('VueChaos', {
         }
     },
     render(createElement, ctx) {
-        console.log('in render');
-        console.log(process.env.NODE_ENV,process.env.VUE_APP_NODE_ENV);
-        console.log('here?');
+
         // Verify we're not getting anyone fired
-        if (process.env.NODE_ENV === 'production' && !ctx.props.runInProduction) {
-            return createElement('div', ctx.data, ctx.children);
-        } else {
-            console.log('Careful: VueChaos is now in production');
+        if (process.env.NODE_ENV === 'production') {
+            if (!ctx.props.runInProduction) {
+                return createElement('div', ctx.data, ctx.children);
+            } else {
+                console.log('Careful: VueChaos is now in production');
+            }
         }
 
         const shouldEmitChaos = (ctx.props.chance / 10) >= Math.random();
         if (shouldEmitChaos) {
             console.log('Throwing error!');
-            throw new Error(ctx.props.errorMessage);
+
+            // This will throw as the component doesn't have a 'neverGonnaLetYouDown' method nor 'name' prop
+            return createElement({
+                template: '<div>Never gonna give you up, {{ neverGonnaLetYouDown() }}</div>',
+                props: {
+                    name: {
+                        required: true,
+                        type: String
+                    }
+                }
+            });
         }
         return createElement('div', ctx.data, ctx.children);
     }

@@ -8,6 +8,9 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
+  "scripts": {
+    "lint": "vue-cli-service lint"
+  },
   "license": "SEE LICENSE IN LICENSE.md",
   "keywords": [
     "front-end",
@@ -22,13 +25,6 @@
   "bugs": {
     "url": "https://github.com/aviadhahami/vue-chaos/issues"
   },
-  "scripts": {
-    "demo": "vue-cli-service serve --open ./demo/index.js",
-    "prepublish": "npm run lint && npm run build",
-    "build": "vue-cli-service build --target lib ./src/VueChaos.ts",
-    "lint": "vue-cli-service lint",
-    "canary": "npm version prerelease && npm publish"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/aviadhahami/vue-chaos"
@@ -38,17 +34,13 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.33.0",
-    "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-typescript": "^4.5.7",
     "@vue/cli-service": "~4.5.0",
     "@vue/eslint-config-typescript": "^5.0.2",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "typescript": "~3.9.3",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -58,12 +50,8 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "eslint:recommended",
-      "@vue/typescript"
+      "eslint:recommended"
     ],
-    "parserOptions": {
-      "parser": "@typescript-eslint/parser"
-    },
     "rules": {}
   },
   "browserslist": [
