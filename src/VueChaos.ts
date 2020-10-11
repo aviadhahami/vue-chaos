@@ -36,4 +36,4 @@ const vueChaos = Vue.component('VueChaos', {
     }
 });
 
-export default VueChaos;
+export default vueChaos;
