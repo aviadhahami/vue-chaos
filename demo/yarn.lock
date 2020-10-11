@@ -8081,10 +8081,10 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
 
-vue-chaos@^0.1.1-canary.10:
-  version "0.1.1-canary.10"
-  resolved "https://registry.yarnpkg.com/vue-chaos/-/vue-chaos-0.1.1-canary.10.tgz#f332e847535c56ed90ef1de513a850032385c8ff"
-  integrity sha512-itJ8DWOc/zgpvIoyybFPnaIq6Abc48geqp96nzGvGfBNSngZonQT53RkXFwupFvtK8TCIVT86pxTxQ5lxZIZdg==
+vue-chaos@^0.1.1-canary.12:
+  version "0.1.1-canary.12"
+  resolved "https://registry.yarnpkg.com/vue-chaos/-/vue-chaos-0.1.1-canary.12.tgz#f71855b28f5bc36125c23c243e01bd2c83192058"
+  integrity sha512-3VzSgagMORW2bJ/YYiAnnTk7vpL3uoSyM7E2I+FQsV+nltFtpcZO0Fj5QRemAPFRbbMAcebboCvs4AHvbkEbuA==
   dependencies:
     core-js "^3.6.5"
     vue "^2.6.11"

@@ -3,6 +3,10 @@ import Vue from 'vue';
 const vueChaos = Vue.component('VueChaos', {
     functional: true,
     props: {
+        NODE_ENV:{
+          default:'development',
+
+        },
         chance: {
             default: 5,
             type: Number,
@@ -18,7 +22,7 @@ const vueChaos = Vue.component('VueChaos', {
     },
     render(createElement, ctx) {
         console.log('in render');
-        console.log(process.env.NODE_ENV);
+        console.log(process.env.NODE_ENV,process.env.VUE_APP_NODE_ENV);
         console.log('here?');
         // Verify we're not getting anyone fired
         if (process.env.NODE_ENV === 'production' && !ctx.props.runInProduction) {

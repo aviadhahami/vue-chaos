@@ -4,7 +4,7 @@
   "description": "A simple yet chaotic component to introduce chaos in your Vue app",
   "homepage": "https://github.com/aviadhahami/vue-chaos",
   "author": "Aviad Hahami <aviadhahami@gmail.com>",
-  "main": "dist/vue-chaos.common.js",
+  "main": "src/VueChaos.js",
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
@@ -24,8 +24,8 @@
   },
   "scripts": {
     "demo": "vue-cli-service serve --open ./demo/index.js",
-    "prepublish": "npm run build",
-    "build": "rimraf dist && vue-cli-service build --target lib --name vue-chaos ./src/VueChaos.ts --mode production",
+    "prepublish": "npm run lint && npm run build",
+    "build": "vue-cli-service build --target lib ./src/VueChaos.ts",
     "lint": "vue-cli-service lint",
     "canary": "npm version prerelease && npm publish"
   },
@@ -48,7 +48,6 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "rimraf": "^3.0.2",
     "typescript": "~3.9.3",
     "vue-template-compiler": "^2.6.11"
   },

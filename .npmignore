@@ -1,6 +1,5 @@
 .idea
 demo
-src/
 test/
 vue.config.js
 babel.config.js
